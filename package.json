@@ -4,7 +4,15 @@
   "description": "vim tips and notes",
   "main": "none",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build-image && npm run clean-containers && npm run start-container",
+    "clean-images":"docker rmi dmkcode/node-docsify",
+    "build-image":"docker build -t dmkcode/node-docsify .",
+    "clean-containers":"docker rm vim_cheats",
+    "start-container":"docker run --name vim_cheats -p 3000:3000 -v `pwd`:/var/www -i -t dmkcode/node-docsify",
+    "docsify-start":"npm run docsify-install && npm run docsify-serve",
+    "docsify-install":"npm i docsify-cli -g",
+    "docsify-serve":"docsify serve . --port 3000"
   },
   "repository": {
     "type": "git",
