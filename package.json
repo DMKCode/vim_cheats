@@ -1,0 +1,23 @@
+{
+  "name": "vim_cheats",
+  "version": "1.0.0",
+  "description": "vim tips and notes",
+  "main": "none",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMKCode/vim_cheats.git"
+  },
+  "keywords": [
+    "vim",
+    "docker"
+  ],
+  "author": "DMKCode",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DMKCode/vim_cheats/issues"
+  },
+  "homepage": "https://github.com/DMKCode/vim_cheats#readme"
+}
